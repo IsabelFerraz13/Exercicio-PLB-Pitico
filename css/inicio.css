@@ -13,11 +13,41 @@ body{
 } 
 
 main{
-    background-color: #e6e6e6; 
+    background-color:  #d3d3d3; 
     padding: 20px; /* Adiciona um espaço interno (deixa um espaço entre a borda e o texto) */
     height: auto;  /* Ajusta a altura com base no conteúdo interno */
     width: auto; /* Ajusta a largura com base no conteúdo  */
     box-sizing: border-box; /* Inclui padding e borda no cálculo da largura e altura */
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1);
+    margin-bottom: 30px;
+    p {
+        color: #333333;
+        font-size: 22px;
+        line-height: 26px;
+        text-align: justify;
+        margin-bottom: 15px;
+    }
+    
+    p a {
+        color: #bea1ec;
+        text-decoration: underline;
+    }
+    
+    p strong {
+        color: #413a7e;
+    }
+
+    a {
+        color: #bea1ec;
+        text-decoration: none;
+        font-weight: bold;
+        transition: color 0.3s ease;
+    }
+    
+    a:hover {
+        color: #431a44;
+        text-decoration: underline;
+    }
     
 }
 
@@ -127,7 +157,6 @@ section {
     padding: 30px;
     margin-bottom: 20px;
     border: 2px solid #000000;
-    box-shadow: 2px 5px 7px black;
     background:radial-gradient( #b2b7fa, #8c84d1)
 }
 
@@ -136,13 +165,21 @@ section {
 /*Rodapé*/
 
 footer {
-    background-color: #1f1f1f; /* Cor de fundo do rodapé */
+    background-color: #3f3f3f; /* Cor de fundo do rodapé */
     color: #ffffff; /* Cor do texto */
     padding: 20px 0; /* Espaço interno */
     text-align: center; /* Centraliza o texto */
-    border: 2px solid #000000;
-    border-radius: 10px;
-
+    margin: 0;
+    width: 100;
+    left: 0;
+    right: inherit;
+    position: relative;
+    box-sizing: border-box;
+    box-shadow: 5px 7px 10px black;
+     p{
+        color: #ffffff;
+     }
+    
 }
 
 .Rodapé {
@@ -150,7 +187,7 @@ footer {
     flex-wrap: wrap;
     justify-content: space-around;
     align-items: flex-start;
-    margin-bottom: 20px;
+    margin-bottom: 20px;    
 }
 
 .Rodapé > div {
